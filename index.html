@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayley Chan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <header>
+        <div class="nav-left">
+            <a href="index.html"><img src="img/h.png" alt="logo"></a>
+        </div>
+        </header>
+
+        <div class="nav-right">
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container" id="welcome-container">
+            <h1 id="welcome-message">Hey!</h1>
+            <p>Welcome to my website ~ </p>
+        </div>
+
+        <article id="about">
+            <div>
+            <h1>ABOUT ME</h1>
+            <p>Nice to meet you! I'm so glad you're here. My name is Hayley and I am a multimedia designer with a unique background in music, specializing in graphic design and digital storytelling.</p>
+            <button onclick="showMore()">LEARN MORE</button>
+            <p id="more-info" style="display: none;">Born and raised in Hong Kong, I am a multimedia designer with an extensive background in music. With over 10 years of classical music training, I bring a strong understanding of artistic expression to my design work. As a designer, I strive to create thoughtful design solutions that effectively communicate clients’ visions while engaging their audience and fostering meaningful connections.
+                <br><br>
+                A musician by day and a designer by night~ 
+            </p>
+            </div>
+            <div>
+                <img id="me-pic" src="img/designer.png" alt="Hayley's Profile Picture">
+            </div>
+        </article>
+    
+        <section id="contact">
+            <div>
+                <h3>GET IN TOUCH WITH ME</h3>
+                <p>NAME</p>
+                <input type="text" id="name-input" placeholder="ENTER YOUR NAME">
+                
+                <p>EMAIL</p>
+                <input type="email" id="email-input" placeholder="ENTER YOUR EMAIL">
+                
+                <p>MESSAGE</p>
+                <textarea id="message-input" placeholder="ENTER YOUR MESSAGE" rows="5" cols="30"></textarea><br><br>
+                
+                <button onclick="greet()">SUBMIT</button>
+                <p id="greeting"></p>
+                <p id="hidden-message" style="display: none;">Thank you for visiting my site! Feel free to reach out to me via my email hayleyy.chan@hotmail.com.</p>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 HAYLEY CHAN. All RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

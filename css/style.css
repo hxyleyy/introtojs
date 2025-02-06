@@ -1,0 +1,263 @@
+/* CSS Style Sheet */
+
+/* Imports */
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(../fonts/Raleway/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-ExtraBold;
+    src: url(../fonts/Raleway/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-ExtraLight;
+    src: url(../fonts/Raleway/Raleway-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Heavy;
+    src: url(../fonts/Raleway/Raleway-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Light;
+    src: url(../fonts/Raleway/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Medium;
+    src: url(../fonts/Raleway/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway-SemiBold;
+    src: url(../fonts/Raleway/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Thin;
+    src: url(../fonts/Raleway/Raleway-Thin.ttf);
+}
+
+@font-face {
+    font-family: Inconsolata-Regular;
+    src: url(../fonts/Inconsolata/Inconsolata-Regular.ttf);
+}
+
+
+/* Variables */
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(28, 28, 28); 
+    font-family: Inconsolata-Regular;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Structure */
+
+/* Navigation bar */
+
+nav {
+    height: 9vh;
+    font-size: 14pt;
+    font-family: Raleway-Regular;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.nav-left {
+    margin-left: 20px;
+    display: flex; 
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-left img {
+    width: 9vw;
+    height: auto;
+    padding-top: 5vh;
+}
+
+.nav-right {
+    margin-right: 40px;
+    display: flex;
+    justify-content: right;
+    font-family: Raleway-Regular;
+    font-size: 1em;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .3s all ease;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 244, 204);
+}
+
+/* Greeting */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    align-items: center;      
+    height: 100vh;          
+    text-align: center;
+    border-bottom: 0.25vw solid rgb(100, 98, 230); 
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5vw;
+}
+
+.container h1{
+    font-family: Raleway-Medium;
+    font-size: 100px;
+}
+
+.container p {
+    font-family: Inconsolata-Regular;
+    font-size: 1.2em;
+}
+
+/* about */
+
+#about {
+    display: flex;
+    padding: 70px 170px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 0.25vw solid rgb(100, 98, 230);
+    max-width: 100%;
+    min-height: 80vh;
+    margin-bottom: 5vw;
+
+}
+
+#about div {
+    flex: 1;
+}
+
+#about h1{
+    font-family: Raleway-Medium;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#about p {
+    margin-top: 30px;
+}
+
+#about img {
+    width: 33vw;
+    padding-left: 40px;
+}
+
+button:hover {
+    background-color: rgb(255, 244, 204);
+    color: rgb(28, 28, 28);
+}
+
+button:active {
+    transform: translate(3px, 3px);
+}
+
+button {
+    background-color: rgb(100, 98, 230);
+    padding: 5px;
+    transition: .3s all ease;
+    font-family: Inconsolata-Regular;
+    font-size: 1em;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    margin:0  auto;
+}
+
+/* Contact */
+
+#contact {
+    display: flex;
+    padding: 50px 170px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    border-bottom: 0.25vw solid rgb(100, 98, 230);
+    max-width: 100%;
+    min-height: 80vh;
+    margin-top: 0; 
+    margin-bottom: 2vw; 
+    box-sizing: border-box; 
+}
+
+#contact h3 {
+    font-family: Raleway-Medium;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 10px;
+    height: 100px;
+    font-family: Inconsolata-Regular;
+    font-size: 14px;
+}
+
+input {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: Inconsolata-Regular;
+    font-size: 14px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+footer p {
+    font-size: 0.8em;
+}
